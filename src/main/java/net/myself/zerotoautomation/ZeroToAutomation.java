@@ -16,7 +16,7 @@ import org.slf4j.Logger;
 @Mod(ZeroToAutomation.MODID)
 public class ZeroToAutomation {
     public static final String MODID = "zerotoautomation";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public ZeroToAutomation(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
