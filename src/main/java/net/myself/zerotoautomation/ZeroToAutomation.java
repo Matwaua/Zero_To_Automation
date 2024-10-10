@@ -1,6 +1,7 @@
 package net.myself.zerotoautomation;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -11,6 +12,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.myself.zerotoautomation.item.ModCreativeModeTabs;
+import net.myself.zerotoautomation.item.ModItems;
 import org.slf4j.Logger;
 
 @Mod(ZeroToAutomation.MODID)
@@ -19,6 +22,10 @@ public class ZeroToAutomation {
     public static final Logger LOGGER = LogUtils.getLogger();
     public ZeroToAutomation(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -29,11 +36,19 @@ public class ZeroToAutomation {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
+
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.FILTER);
+            event.accept(ModItems.CHISEL);
+            event.accept(ModItems.ANDESITE_FLINT);
+        }
     }
+
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
+
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
