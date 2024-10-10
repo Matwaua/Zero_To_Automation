@@ -16,7 +16,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ANDESITE_FLINT = ITEMS.register("andesiteflint",
+    public static final RegistryObject<Item> ANDESITE_FLINT = ITEMS.register("andesite_flint",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

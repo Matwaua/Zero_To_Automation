@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "#": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "SBS",
+    "B#B",
+    "SBS"
+  ],
+  "result": {
+    "item": "zerotoautomation:filter"
+  }
+}

@@ -1,7 +1,10 @@
 {
   "item.zerotoautomation.filter": "Filtro",
   "item.zerotoautomation.chisel": "Cinzel",
-  "item.zerotoautomation.andesiteflint": "Sílex de andesito",
+  "item.zerotoautomation.andesite_flint": "Sílex de andesito",
+
+  "block.zerotoautomation.fertilized_dirt": "Terra Fertilizada",
+  "block.zerotoautomation.andesite_gravel": "Cascalho de Andesito",
 
   "creativetab.zero_to_automation_tab": "Do Zero à Automação"
 }

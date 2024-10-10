@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.myself.zerotoautomation.block.ModBlocks;
 import net.myself.zerotoautomation.item.ModCreativeModeTabs;
 import net.myself.zerotoautomation.item.ModItems;
 import org.slf4j.Logger;
@@ -26,6 +27,7 @@ public class ZeroToAutomation {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -38,11 +40,6 @@ public class ZeroToAutomation {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.FILTER);
-            event.accept(ModItems.CHISEL);
-            event.accept(ModItems.ANDESITE_FLINT);
-        }
     }
 
     @SubscribeEvent
