@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "minecraft:andesite_gravel"
+              "name": "zerotoautomation:andesite_gravel"
             },
             {
               "type": "minecraft:alternatives",
@@ -43,11 +43,11 @@
                       "enchantment": "minecraft:fortune"
                     }
                   ],
-                  "name": "minecraft:andesite_flint"
+                  "name": "zerotoautomation:andesite_flint"
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "minecraft:andesite_gravel"
+                  "name": "zerotoautomation:andesite_gravel"
                 }
               ],
               "conditions": [
@@ -62,5 +62,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "zerotoautomation:blocks/andesite_gravel"
+  "random_sequence": "minecraft:blocks/gravel"
 }
