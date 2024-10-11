@@ -1,7 +1,6 @@
 package net.myself.zerotoautomation;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -17,9 +16,9 @@ import net.myself.zerotoautomation.item.ModCreativeModeTabs;
 import net.myself.zerotoautomation.item.ModItems;
 import org.slf4j.Logger;
 
-@Mod(ZeroToAutomation.MODID)
+@Mod(ZeroToAutomation.MOD_ID)
 public class ZeroToAutomation {
-    public static final String MODID = "zerotoautomation";
+    public static final String MOD_ID = "zerotoautomation";
     public static final Logger LOGGER = LogUtils.getLogger();
     public ZeroToAutomation(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
@@ -46,7 +45,7 @@ public class ZeroToAutomation {
     public void onServerStarting(ServerStartingEvent event) {
     }
 
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {

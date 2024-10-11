@@ -11,19 +11,18 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.myself.zerotoautomation.ZeroToAutomation;
 import net.myself.zerotoautomation.item.ModItems;
-import org.apache.commons.compress.compressors.lz77support.LZ77Compressor;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, ZeroToAutomation.MODID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, ZeroToAutomation.MOD_ID);
 
     public static final RegistryObject<Block> FERTILIZED_DIRT = registerBlock("fertilized_dirt",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(0.7F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> ANDESITE_GRAVEL = registerBlock("andesite_gravel",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAVEL).strength(0.8F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

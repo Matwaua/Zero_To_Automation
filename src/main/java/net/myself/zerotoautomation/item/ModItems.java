@@ -9,7 +9,7 @@ import net.myself.zerotoautomation.ZeroToAutomation;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, ZeroToAutomation.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, ZeroToAutomation.MOD_ID);
 
     public static final RegistryObject<Item> FILTER = ITEMS.register("filter",
             () -> new Item(new Item.Properties()));
