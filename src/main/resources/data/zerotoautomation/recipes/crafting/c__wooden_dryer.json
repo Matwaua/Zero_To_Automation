@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:oak_log"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "C": {
+      "item": "zerotoautomation:chisel"
+    }
+  },
+  "pattern": [
+    "S",
+    "L",
+    "C"
+  ],
+  "result": {
+    "item": "zerotoautomation:wooden_dryer"
+  }
+}

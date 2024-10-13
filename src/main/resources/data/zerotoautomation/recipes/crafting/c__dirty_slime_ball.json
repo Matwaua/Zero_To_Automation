@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "zerotoautomation:fertilized_dirt"
+    }
+  ],
+  "result": {
+    "item": "zerotoautomation:dirty_slime_ball",
+    "count": 3
+  }
+}

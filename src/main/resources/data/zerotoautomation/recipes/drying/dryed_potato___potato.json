@@ -1,0 +1,11 @@
+{
+  "type": "zerotoautomation:drying",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    }
+  ],
+  "output": {
+    "item": "zerotoautomation:dried_potato"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "zerotoautomation:block/dryer_bottom",
+    "east": "zerotoautomation:block/dryer_side",
+    "north": "zerotoautomation:block/dryer_side",
+    "south": "zerotoautomation:block/dryer_front",
+    "up": "zerotoautomation:block/dryer_top",
+    "west": "zerotoautomation:block/dryer_side",
+    "particle": "minecraft:block/dryer_side"
+  }
+}

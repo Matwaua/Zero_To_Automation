@@ -1,10 +1,17 @@
 {
   "item.zerotoautomation.filter": "Filter",
-  "item.zerotoautomation.chisel": "Chisel",
+  "item.zerotoautomation.dirty_slime_ball": "Dirty Slime Ball",
   "item.zerotoautomation.andesite_flint": "Andesite Flint",
+
+  "item.zerotoautomation.dried_potato": "Dried Potato",
+
+  "item.zerotoautomation.chisel": "Chisel",
 
   "block.zerotoautomation.fertilized_dirt": "Fertilized Dirt",
   "block.zerotoautomation.andesite_gravel": "Andesite Gravel",
+  "block.zerotoautomation.dried_log": "Dried Log",
+
+  "block.zerotoautomation.wooden_dryer": "Wooden Dryer",
 
   "creativetab.zero_to_automation_tab": "Zero To Automation"
 }

@@ -1,0 +1,11 @@
+{
+  "type": "zerotoautomation:drying",
+  "ingredients": [
+    {
+      "item": "zerotoautomation:dirty_slime_ball"
+    }
+  ],
+  "output": {
+    "item": "minecraft:flint"
+  }
+}

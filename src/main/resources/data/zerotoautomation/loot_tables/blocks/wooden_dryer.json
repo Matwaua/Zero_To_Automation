@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "zerotoautomation:wooden_dryer"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "zerotoautomation:blocks/wooden_dryer"
+}

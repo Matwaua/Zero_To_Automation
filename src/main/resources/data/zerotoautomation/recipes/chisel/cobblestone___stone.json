@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stone"
+    },
+    "C": {
+      "item": "zerotoautomation:chisel"
+    }
+  },
+  "pattern": [
+    "C",
+    "B"
+  ],
+  "result": {
+    "item": "minecraft:cobblestone"
+  }
+}

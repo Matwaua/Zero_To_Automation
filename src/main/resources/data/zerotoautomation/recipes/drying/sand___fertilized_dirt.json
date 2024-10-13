@@ -1,0 +1,11 @@
+{
+  "type": "zerotoautomation:drying",
+  "ingredients": [
+    {
+      "item": "zerotoautomation:fertilized_dirt"
+    }
+  ],
+  "output": {
+    "item": "minecraft:sand"
+  }
+}

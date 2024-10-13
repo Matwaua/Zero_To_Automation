@@ -20,11 +20,18 @@ public class ModCreativeModeTabs {
                             .title(Component.translatable("creativetab.zero_to_automation_tab"))
                             .displayItems((pParameters, pOutput) -> {
                                 pOutput.accept(ModItems.FILTER.get());
-                                pOutput.accept(ModItems.CHISEL.get());
+                                pOutput.accept(ModItems.DIRTY_SLIME_BALL.get());
                                 pOutput.accept(ModItems.ANDESITE_FLINT.get());
+
+                                pOutput.accept(ModItems.CHISEL.get());
+
+                                pOutput.accept(ModItems.DRIED_POTATO.get());
 
                                 pOutput.accept(ModBlocks.FERTILIZED_DIRT.get());
                                 pOutput.accept(ModBlocks.ANDESITE_GRAVEL.get());
+                                pOutput.accept(ModBlocks.DRIED_LOG.get());
+
+                                pOutput.accept(ModBlocks.WOODEN_DRYER.get());
                             }).build());
 
     public static void register(IEventBus eventBus) {

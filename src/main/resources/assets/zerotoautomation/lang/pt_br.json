@@ -1,10 +1,17 @@
 {
   "item.zerotoautomation.filter": "Filtro",
-  "item.zerotoautomation.chisel": "Cinzel",
+  "item.zerotoautomation.dirty_slime_ball": "Bola de Slime Suja",
   "item.zerotoautomation.andesite_flint": "Sílex de andesito",
+
+  "item.zerotoautomation.dried_potato": "Batata desidratada",
+
+  "item.zerotoautomation.chisel": "Cinzel",
 
   "block.zerotoautomation.fertilized_dirt": "Terra Fertilizada",
   "block.zerotoautomation.andesite_gravel": "Cascalho de Andesito",
+  "block.zerotoautomation.dried_log": "Tronco Desidratado",
+
+  "block.zerotoautomation.wooden_dryer": "Secador de Madeira",
 
   "creativetab.zero_to_automation_tab": "Do Zero à Automação"
 }

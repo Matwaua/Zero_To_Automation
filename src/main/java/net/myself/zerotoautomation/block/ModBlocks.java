@@ -1,5 +1,7 @@
 package net.myself.zerotoautomation.block;
 
+import net.myself.zerotoautomation.ZeroToAutomation;
+
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -10,7 +12,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.myself.zerotoautomation.ZeroToAutomation;
+import net.myself.zerotoautomation.block.custom.DryerBlock;
+import net.myself.zerotoautomation.block.custom.FuelBlockItem;
 import net.myself.zerotoautomation.item.ModItems;
 
 import java.util.function.Supplier;
@@ -25,14 +28,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> ANDESITE_GRAVEL = registerBlock("andesite_gravel",
             () -> new GravelBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
 
+    public static final RegistryObject<Block> WOODEN_DRYER = registerBlock("wooden_dryer",
+            () -> new DryerBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE).noOcclusion(), 100));
+
+    public static final RegistryObject<Block> DRIED_LOG = registerBlockCombustible("dried_log", 600,
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
+    private static <T extends Block> RegistryObject<T> registerBlockCombustible(String name,int burnTime , Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItemCombustible(name, toReturn, burnTime);
+        return toReturn;
+    }
+
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerBlockItemCombustible(String name, RegistryObject<T> block, int  burnTime) {
+        return ModItems.ITEMS.register(name, () -> new FuelBlockItem(block.get(), burnTime, new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gravel"
+    },
+    "F": {
+      "item": "zerotoautomation:filter"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GGG",
+    " F "
+  ],
+  "result": {
+    "item": "minecraft:iron_nugget"
+  }
+}
